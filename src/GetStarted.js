@@ -44,7 +44,7 @@ const style=StyleSheet.create({
   },
  coverImage:{
   width:"100%",
-  height:360,
+  height:460,
   // flex:1,
   // justifyContent:"center"
  },
@@ -89,7 +89,7 @@ const style=StyleSheet.create({
   justifyContent: 'center',
   paddingVertical: 12,
   paddingHorizontal: 12,
-  borderRadius: 10,
+  borderRadius: 20,
   elevation: 3,
   backgroundColor: 'white',
   marginLeft:120,

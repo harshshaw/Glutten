@@ -5,6 +5,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { Dashboard } from './src/Dashboard';
 import {ProfileScreen}from './src/ProfileScreen';
 import { GetStarted } from './src/GetStarted';
+import { LogoScreen } from './src/LogoScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -12,13 +13,18 @@ const App = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator
-       initialRouteName='GetStarted'
+       initialRouteName='LogoScreen'
        options={{ headerShown: false }}
       >
         <Stack.Screen
+        name="LogoScreen"
+        component={LogoScreen}
+        options={{headerShown:false}}/>
+        
+        <Stack.Screen
         name="GetStarted"
         component={GetStarted}
-        // options={{title:'Get Started'}}
+        options={{headerShown:false}}
         />
         {/* <Stack.Screen
           name="Home"
